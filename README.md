@@ -1,4 +1,4 @@
-# Grader
+# AutoEvaluation of Programs
 ## Installing the project
 clone this repo into your system
 ```bash
