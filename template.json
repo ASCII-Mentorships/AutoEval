@@ -1,0 +1,14 @@
+{
+   "inputParams": [
+      {"type":"int","name":"a"},
+      {"type":"int","name":"b"},
+      {"type":"int","name":"c"},
+      {"type":"int","name":"d"}],
+    "outputParam": {"type":"int"},
+    "arrayConfig": {"type":"int","size":"4","name":"tempArray"},
+    "goldenSolution": {"fname":"golden_solution", "solution":"solution"},
+    "studentSolution": {"fname":"student_solution"},
+    "semanticCategories": [{"name":"cat1","preCondition" : "int precondition(int input_a,int input_b,int input_c,int input_d) { if(input_a > 0 && input_b > 0 && input_c > 0 && input_d > 0){ if(input_a == input_b && input_b == input_c && input_c == input_d) return 1; } return 0;}", "postCondition" : "int postcondition(int input_a,int input_b,int input_c,int input_d,int return_value_1,int return_value_2) { if(precondition(input_a,input_b,input_c,input_d) && return_value_1 == return_value_2) return 1; return 0; }"},
+      {"name":"cat2","preCondition" : "int precondition(int input_a,int input_b,int input_c,int input_d) { if(input_a > 0 && input_b > 0 && input_c > 0 && input_d > 0){if(input_c != input_d && input_a == input_b && input_b == input_c)return 1;if(input_a != input_b && input_b == input_c && input_c == input_d)return 1;if(input_c != input_b && input_c == input_d && input_d == input_a)return 1;if(input_a == input_c && input_d != input_a && input_a == input_b)return 1;} return 0;}", "postCondition" : "int postcondition(int input_a,int input_b,int input_c,int input_d,int return_value_1,int return_value_2) { if(precondition(input_a,input_b,input_c,input_d) && return_value_1 == return_value_2) return 1; return 0; }"},
+   {"name":"cat3","preCondition" : "int precondition(int input_a,int input_b,int input_c,int input_d) { if(input_a > 0 && input_b > 0 && input_c > 0 && input_d > 0) return 1; return 0;}", "postCondition" : "int postcondition(int input_a,int input_b,int input_c,int input_d,int return_value_1,int return_value_2) { if(precondition(input_a,input_b,input_c,input_d) && return_value_1 == return_value_2) return 1; return 0; }"}]
+}
