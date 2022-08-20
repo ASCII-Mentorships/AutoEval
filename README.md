@@ -7,7 +7,7 @@ This is achieved by leveraging powerful techniques like symbolic execution and b
 ### Installing the project
 clone this repo into your system
 ```bash
-git clone https://github.com/AutoEvalOrg/Grader.git
+git clone https://github.com/ASCII-Mentorships/AutoEval.git
 ```
 ### virtual environment
 Setup virtual environment
